@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default Suite" duration-ms="6835" started-at="2021-04-28T02:02:19Z" finished-at="2021-04-28T02:02:26Z">
+  <suite name="Default Suite" duration-ms="12356" started-at="2021-05-02T12:12:22Z" finished-at="2021-05-02T12:12:35Z">
     <groups>
     </groups>
-    <test name="Chrome" duration-ms="6835" started-at="2021-04-28T02:02:19Z" finished-at="2021-04-28T02:02:26Z">
+    <test name="Chrome" duration-ms="12356" started-at="2021-05-02T12:12:22Z" finished-at="2021-05-02T12:12:35Z">
       <class name="AddVacancy">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:AddVacancy@1bb1fde8]" name="setUp" is-config="true" duration-ms="5038" started-at="2021-04-27T22:02:19Z" finished-at="2021-04-27T22:02:24Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:AddVacancy@62fe6067]" name="setUp" is-config="true" duration-ms="9874" started-at="2021-05-02T08:12:22Z" finished-at="2021-05-02T08:12:32Z">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="addVacancy()[pri:0, instance:AddVacancy@1bb1fde8]" name="addVacancy" duration-ms="1032" started-at="2021-04-27T22:02:24Z" finished-at="2021-04-27T22:02:25Z">
+        <test-method status="FAIL" signature="addVacancy()[pri:0, instance:AddVacancy@62fe6067]" name="addVacancy" duration-ms="1371" started-at="2021-05-02T08:12:32Z" finished-at="2021-05-02T08:12:34Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -56,7 +56,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addVacancy -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:AddVacancy@1bb1fde8]" name="tearDown" is-config="true" duration-ms="197" started-at="2021-04-27T22:02:25Z" finished-at="2021-04-27T22:02:26Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:AddVacancy@62fe6067]" name="tearDown" is-config="true" duration-ms="167" started-at="2021-05-02T08:12:34Z" finished-at="2021-05-02T08:12:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
