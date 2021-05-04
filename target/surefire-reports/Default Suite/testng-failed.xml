@@ -5,13 +5,12 @@
   <test name="Chrome(failed)" parallel="tests">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="AddVacancy">
+      <class name="UpdateMyInfo">
         <methods>
-          <include name="addVacancy"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
+          <include name="loginMyInfoPage"/>
+          <include name="login"/>
         </methods>
-      </class> <!-- AddVacancy -->
+      </class> <!-- UpdateMyInfo -->
     </classes>
   </test> <!-- Chrome(failed) -->
 </suite> <!-- Failed suite [Default Suite] -->

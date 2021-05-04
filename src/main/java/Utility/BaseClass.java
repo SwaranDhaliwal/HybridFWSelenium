@@ -1,9 +1,6 @@
 package Utility;
-
-import io.qameta.allure.Attachment;
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
+;
+import PageObjects.LoginPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -42,22 +39,17 @@ public class BaseClass {
         return getDriver();
     }
 
+    @BeforeClass()
+    public void setupLogin(){
+        LoginPage lp = new LoginPage(driver);
+        lp.setUsername("Admin");
+        lp.setPassword("admin123");
+        lp.setLoginButton();
+    }
+
     @AfterClass
     public void tearDown(){
         driver.close();
     }
-
-
-//    @AfterMethod
-//    public void attachment(ITestResult result){
-//        if (result.isSuccess()== false) {
-//            screenshot(driver);
-//        }
-//    }
-//
-//    @Attachment(value = "Screenshot", type = "image/png")
-//    public byte[] screenshot( WebDriver driverScreenshot) {
-//        return ((TakesScreenshot) driverScreenshot).getScreenshotAs(OutputType.BYTES);
-//    }
 
 }

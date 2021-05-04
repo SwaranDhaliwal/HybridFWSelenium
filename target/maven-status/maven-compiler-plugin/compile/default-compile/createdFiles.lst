@@ -1,8 +1,9 @@
-Utility/ExcelRead.class
-Utility/ConfigRead.class
 Utility/ExplicitWait.class
 PageObjects/LoginPage.class
-PageObjects/UserManagement.class
 PageObjects/Vacancies.class
 Utility/BaseClass.class
+Utility/ExcelRead.class
+Utility/ConfigRead.class
+PageObjects/MyInfo.class
+PageObjects/UserManagement.class
 Utility/TestListeners.class
