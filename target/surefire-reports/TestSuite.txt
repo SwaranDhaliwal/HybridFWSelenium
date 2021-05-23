@@ -1,7 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 1, Errors: 0, Skipped: 3, Time elapsed: 2.964 s <<< FAILURE! - in TestSuite
-UpdateMyInfo.login  Time elapsed: 2.345 s  <<< FAILURE!
-java.lang.NullPointerException
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 24.703 s <<< FAILURE! - in TestSuite
+AddVacancy.addVacancy  Time elapsed: 1.612 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: #btnSave
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Swaranjeets-MacBook-Air.local', ip: 'fe80:0:0:0:18ab:cb37:b2e3:73eb%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210415204500, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 1454, moz:profile: /var/folders/63/wvbxd3211mz..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 20.4.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 9c3d2266-f744-9f4c-bc0e-93f19f6a7883
+*** Element info: {Using=css selector, value=#btnSave}
+	at AddVacancy.addVacancy(AddVacancy.java:20)
 

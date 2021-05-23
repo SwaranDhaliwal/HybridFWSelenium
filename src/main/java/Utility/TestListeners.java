@@ -24,7 +24,6 @@ public class TestListeners implements ITestListener {
         WebDriver driver = BaseClass.getDriver();
 
         // Allure ScreenShot and SaveTestLog
-//        System.out.println("Screenshot captured for test case:" + getTestMethodName(iTestResult));
         saveFailureScreenShot(driver);
         saveTextLog(getTestMethodName(iTestResult) + " failed and screenshot taken!");
     }

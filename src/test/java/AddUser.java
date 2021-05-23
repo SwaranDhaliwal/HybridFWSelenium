@@ -2,7 +2,6 @@ import PageObjects.LoginPage;
 import PageObjects.UserManagement;
 import Utility.BaseClass;
 import io.qameta.allure.Description;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 

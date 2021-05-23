@@ -83,20 +83,4 @@ public class ExcelRead {
         fo.close();
     }
 
-
 }
-//
-//public class ExcelRead {
-//    public XSSFWorkbook work_book;
-//    public XSSFSheet sheet;
-//
-//    public ExcelRead(String excelfilePath) {
-//        try {
-//            File s = new File(excelfilePath);
-//            FileInputStream stream = new FileInputStream(s);
-//            work_book = new XSSFWorkbook(stream);
-//        } catch (Exception e) {
-//            System.out.println(e.getMessage());
-//        }
-//    }
-//}

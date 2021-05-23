@@ -33,5 +33,17 @@ public class ConfigRead {
         String firefoxPath = properties.getProperty("firefoxpath");
         return firefoxPath;
     }
+
+    public String getUserName(){
+        return properties.getProperty("username");
+    }
+
+    public String getPassword(){
+        return properties.getProperty("password");
+    }
+
+    public String getExcelPath(){
+        return properties.getProperty("excelpath");
+    }
 }
 

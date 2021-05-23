@@ -1,7 +1,7 @@
 Utility/ExplicitWait.class
 PageObjects/LoginPage.class
-PageObjects/Vacancies.class
 Utility/BaseClass.class
+PageObjects/vacanciesPage.class
 Utility/ExcelRead.class
 Utility/ConfigRead.class
 PageObjects/MyInfo.class

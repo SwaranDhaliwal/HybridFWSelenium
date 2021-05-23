@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Default Suite]" parallel="tests">
-  <parameter name="browser" value="chrome"/>
-  <test name="Chrome(failed)" parallel="tests">
-    <parameter name="browser" value="chrome"/>
+<suite thread-count="3" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Default Suite]" parallel="tests">
+  <parameter name="browser" value="firefox"/>
+  <test name="Firefox(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="UpdateMyInfo">
+      <class name="AddVacancy">
         <methods>
-          <include name="loginMyInfoPage"/>
-          <include name="login"/>
+          <include name="addVacancy"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="setupLogin"/>
         </methods>
-      </class> <!-- UpdateMyInfo -->
+      </class> <!-- AddVacancy -->
     </classes>
-  </test> <!-- Chrome(failed) -->
+  </test> <!-- Firefox(failed) -->
 </suite> <!-- Failed suite [Default Suite] -->

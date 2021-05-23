@@ -1,7 +1,6 @@
 import PageObjects.LoginPage;
 import PageObjects.MyInfo;
 import Utility.BaseClass;
-import com.oracle.deploy.update.UpdateInfo;
 import io.qameta.allure.Description;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
@@ -9,7 +8,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import java.util.List;
 
 public class UpdateMyInfo extends BaseClass {
@@ -69,7 +67,7 @@ public class UpdateMyInfo extends BaseClass {
         List<WebElement> expectedOutput = driver.findElements(By.xpath("//tbody/tr/td[2]"));
         for (WebElement item : expectedOutput){
             System.out.println(item.getText());
-            if (item.getText().equals("robin")){
+            if (item.getText().equals("ram")){
             result = true;
             break;
             }

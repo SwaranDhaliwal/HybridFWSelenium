@@ -13,6 +13,8 @@ public class BaseClass {
     String url = configRead.url();
     String chromePath = configRead.chromePath();
     String firefoxPath = configRead.firefoxPath();
+    String username = configRead.getUserName();
+    String password = configRead.getPassword();
 
     public WebDriver driver;
     public  static ThreadLocal<WebDriver> tdriver = new ThreadLocal<WebDriver>();
@@ -21,9 +23,9 @@ public class BaseClass {
         return tdriver.get();
     }
 
-    @BeforeClass
+    @BeforeTest
     @Parameters("browser")
-    public WebDriver setUp(String browserName) throws InterruptedException {
+    public WebDriver setUp(String browserName) {
         if (browserName.equals("chrome")) {
             System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") +
                     chromePath);
@@ -39,15 +41,15 @@ public class BaseClass {
         return getDriver();
     }
 
-    @BeforeClass()
+    @BeforeTest
     public void setupLogin(){
         LoginPage lp = new LoginPage(driver);
-        lp.setUsername("Admin");
-        lp.setPassword("admin123");
+        lp.setUsername(username);
+        lp.setPassword(password);
         lp.setLoginButton();
     }
 
-    @AfterClass
+    @AfterTest
     public void tearDown(){
         driver.close();
     }
