@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Default Suite" parallel="tests" thread-count="3">
+    <parameter name="browser" value="chrome"></parameter>
     <test name="Chrome">
-        <parameter name="browser" value="chrome"></parameter>
         <classes>
             <!--            <class name="LoginTestDataProvider"/>-->
             <!--            <class name="AddUser"></class>-->
@@ -15,9 +15,11 @@
         <parameter name="browser" value="firefox"></parameter>
         <classes>
             <!--            <class name="LoginTestDataProvider"/>-->
-            <!--            <class name="AddUser"></class>-->
-            <class name="AddVacancy"></class>
-            <!--            <class name="UpdateMyInfo"></class>-->
+<!--            <class name="AddUser"></class>-->
+<!--            <class name="AddVacancy"></class>-->
+<!--            <class name="UpdateMyInfo"></class>-->
+<!--            <class name="AddCandidate"></class>-->
+            <class name="DirectoryPageScrollTest"></class>
         </classes>
     </test> <!-- SeleniumFramework -->
 </suite> <!-- Default Suite -->

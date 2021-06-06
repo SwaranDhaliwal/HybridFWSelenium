@@ -14,7 +14,7 @@ public class UpdateMyInfo extends BaseClass {
     LoginPage lp;
     MyInfo updateInfo;
 
-    @Test(enabled = false)
+    @Test
     @Description("Update contact details")
     @Step("input data and click save button")
     public void contactDetailsUpdate(){

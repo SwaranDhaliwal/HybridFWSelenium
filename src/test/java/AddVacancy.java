@@ -1,10 +1,9 @@
-import PageObjects.vacanciesPage;
+import PageObjects.Recruitment;
 import Utility.BaseClass;
 import Utility.ConfigRead;
 import Utility.ExcelRead;
 import io.qameta.allure.*;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
@@ -18,7 +17,7 @@ public class AddVacancy extends BaseClass {
     @Test
     @Step("navigate to add vacancy page")
     public void addVacancy() throws IOException {
-        vacanciesPage vacanciesPage = new vacanciesPage(driver);
+        Recruitment vacanciesPage = new Recruitment(driver);
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("arguments[0].click();", vacanciesPage.vacanciesLink);
         try {
@@ -38,12 +37,6 @@ public class AddVacancy extends BaseClass {
             vacanciesPage.setJobDescription(ExcelRead.getCellData(excelPath, "AddVacancy", i, 4));
             vacanciesPage.setSaveVacancyButton();
             vacanciesPage.vacanciesLink.click();
-        }
-
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
         }
     }
 

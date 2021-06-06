@@ -17,13 +17,14 @@ public class BaseClass {
     String password = configRead.getPassword();
 
     public WebDriver driver;
+
     public  static ThreadLocal<WebDriver> tdriver = new ThreadLocal<WebDriver>();
 
     public static synchronized WebDriver getDriver(){
         return tdriver.get();
     }
 
-    @BeforeTest
+    @BeforeClass
     @Parameters("browser")
     public WebDriver setUp(String browserName) {
         if (browserName.equals("chrome")) {
@@ -41,7 +42,7 @@ public class BaseClass {
         return getDriver();
     }
 
-    @BeforeTest
+    @BeforeClass
     public void setupLogin(){
         LoginPage lp = new LoginPage(driver);
         lp.setUsername(username);
@@ -49,7 +50,7 @@ public class BaseClass {
         lp.setLoginButton();
     }
 
-    @AfterTest
+    @AfterClass
     public void tearDown(){
         driver.close();
     }
